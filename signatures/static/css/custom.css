@@ -1,0 +1,87 @@
+.jumbotron {
+    text-align: center;
+    margin-top: 5em;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.jumbotron p, h1, h4, a {
+    margin: 20px;
+}
+
+input {
+    width: 90%;
+    text-align: center;
+    font-size: large;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border: 2px solid #9A12A6;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+body {
+    background: url('../images/love-background3.gif') repeat 0 0;
+    font-family: 'Cutive', serif;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#jumbotitle {
+    font-family: 'Tillana', cursive;
+    /*font-weight: bold;*/
+    color: #74157e; !important;
+}
+
+#generate-btn {
+    padding-top: 15px;
+}
+
+.generate-btn {
+    padding-top: 15px;
+    color: #ffffff;
+    background-color: #B81BA6;
+    border-color: #9A12A6;
+}
+
+.generate-btn:hover,
+.generate-btn:focus,
+.generate-btn:active,
+.generate-btn.active,
+.open .dropdown-toggle.generate-btn {
+    color: #ffffff;
+    background-color: #A515AD;
+    border-color: #9A12A6;
+}
+
+.generate-btn:active,
+.generate-btn.active,
+.open .dropdown-toggle.generate-btn {
+    background-image: none;
+}
+
+.generate-btn.disabled,
+.generate-btn[disabled],
+fieldset[disabled] .generate-btn,
+.generate-btn.disabled:hover,
+.generate-btn[disabled]:hover,
+fieldset[disabled] .generate-btn:hover,
+.generate-btn.disabled:focus,
+.generate-btn[disabled]:focus,
+fieldset[disabled] .generate-btn:focus,
+.generate-btn.disabled:active,
+.generate-btn[disabled]:active,
+fieldset[disabled] .generate-btn:active,
+.generate-btn.disabled.active,
+.generate-btn[disabled].active,
+fieldset[disabled] .generate-btn.active {
+    background-color: #B81BA6;
+    border-color: #9A12A6;
+}
+
+.generate-btn .badge {
+    color: #B81BA6;
+    background-color: #ffffff;
+}
