@@ -16,7 +16,7 @@ def update_greeting():
         "dolphins", "ponies", "unicorns", "high fives", "cheers", "smiles", "cuddles", "thanks",
         "success", "stars", "fun", "awesomeness", "laughter", "appreciation", "marshmallows",
         "happiness", "chocolate", "dreams", "sweetness", "strawberries", "wins", "wows", "flowers",
-        "sparkles", "glitter", "hearts", "sunshine", "peace", "love", "bubbles"]
+        "sparkles", "glitter", "hearts", "sunshine", "peace", "bubbles"]
     indexes = sample(range(0, len(list_of_awesomeness)), 3)
     greeting = list_of_awesomeness[indexes[0]].title() + ", " + list_of_awesomeness[indexes[1]] + " and " \
             + list_of_awesomeness[indexes[2]] + ","
