@@ -19,7 +19,7 @@ def update_greeting():
         "sparkles", "glitter", "hearts", "sunshine", "peace", "bubbles", "ducklings", "stroopwafels",
         "pancakes", "butterflies"]
     greetings = sample(list_of_awesomeness, 3)
-    greeting = '{}, {} and {},'.format(greetings[0].title(), greetings[1], greetings[2])
+    greeting = '{}, {}, and {},'.format(greetings[0].title(), greetings[1], greetings[2])
 
     return greeting
 
