@@ -29,19 +29,25 @@
           <div class="jumbotron col-md-8">
               <h1 id="jumbotitle">Cute Email Signature Generator</h1>
               <h4>Generate awesomeness to end your emails in style!</h4>
-              <input type="text" name="signature" value="" readonly="readonly" />
+              <input class="signature" type="text" name="signature" value="" readonly="readonly" />
               <p><button class="btn generate-btn btn-lg" role="button">Generate Signature</button></p>
+              <label><input type="checkbox" id="oxford_comma_checkbox"/>
+                  Use Oxford Comma<a href="https://en.wikipedia.org/wiki/Serial_comma" target="_blank">[?]</a></label>
           </div>
 
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
        <script type="text/javascript">
-            $( document ).ready(function() {
+            $(document).ready(function() {
                 $(".generate-btn").click(function () {
-                    $.get('/new_signature/', function(data){
-                        $('input[name="signature"]').val(data);
-                    });
+                    var url = '/new_signature/';
+                    if (document.getElementById('oxford_comma_checkbox').checked) {
+                        url += 'oxford_comma/';
+                    }
+                    $.get(url, function (data) {
+                            $('input[name="signature"]').val(data);
+                        });
                 });
 
                 $('input[name="signature"]').click(function () {
